@@ -103,9 +103,3 @@ add_author_and_books("George Orwell", [
 
 # Affichage des auteurs et livres
 list_authors_and_books
-
-# Mise à jour d'un auteur et d'un livre
-update_author_and_book(1, "Orwell, George", 1, "1984 (Updated Edition)", "1950-06-08")
-
-# Suppression d'un auteur (et de ses livres)
-delete_author(1)

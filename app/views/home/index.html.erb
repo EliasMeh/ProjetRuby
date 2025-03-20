@@ -1,2 +1,18 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Authors</h1>
+<ul>
+  <% @authors.each do |author| %>
+    <li><strong><%= author.name %></strong></li>
+    <ul>
+      <% author.books.each do |book| %>
+        <li><%= book.title %> (Published: <%= book.publication_date %>)</li>
+      <% end %>
+    </ul>
+  <% end %>
+</ul>
+
+<h1>Books</h1>
+<ul>
+  <% @books.each do |book| %>
+    <li><%= book.title %> by <%= book.author.name %> (Published: <%= book.publication_date %>)</li>
+  <% end %>
+</ul>
