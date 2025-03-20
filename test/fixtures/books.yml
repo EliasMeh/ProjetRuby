@@ -1,11 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  publication_date: 2025-03-19
-  author: one
-
-two:
-  title: MyString
-  publication_date: 2025-03-19
-  author: two
+  title: Sample Book
+  author: one # Assuming you also have an author fixture
+  publication_date: 2023-01-01
+  status: available
