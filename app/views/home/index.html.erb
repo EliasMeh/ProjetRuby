@@ -1,6 +1,17 @@
-<h1>Welcome to the Library</h1>
+<div class="p-8 rounded-xl text-center">
+  <h1 class="text-5xl font-extrabold mb-8">Welcome to the Library</h1>
 
-<div>
-    <%= link_to 'View Authors', authors_path, class: 'btn btn-primary' %>
-    <%= link_to 'View Books', books_path, class: 'btn btn-primary' %>
+  <div class="flex justify-center gap-10 mb-8">
+    <%= link_to 'View Authors', authors_path, class: 'bg-teal-500 text-white py-3 px-6 rounded-full text-xl shadow-lg hover:bg-teal-600 transition duration-300 ease-in-out' %>
+    <%= link_to 'View Books', books_path, class: 'bg-purple-500 text-white py-3 px-6 rounded-full text-xl shadow-lg hover:bg-purple-600 transition duration-300 ease-in-out' %>
+  </div>
+
+  <div class="bg-white bg-opacity-80 p-10 rounded-xl shadow-xl mb-8">
+    <p class="text-lg mb-6">Explore our extensive collection of books and authors! Dive into the world of literature by browsing our authors or books.</p>
+    <p class="text-sm">Our library is filled with a variety of genres, from science fiction to historical fiction, and more. Start your journey now!</p>
+  </div>
+
+  <footer class="mt-10">
+    <p class="text-sm">Library Inventory System &copy; 2025</p>
+  </footer>
 </div>
